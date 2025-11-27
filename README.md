@@ -50,7 +50,7 @@ src/
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/synapsy-ai.git
+   git clone https://github.com/guilhermescr/synapsy-ai.git
    cd synapsy-ai
    ```
 
