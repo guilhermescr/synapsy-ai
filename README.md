@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+![Synapsy AI Logo](./public/images/synapsy-ai-no-text-logo.png)
 
-## Getting Started
+# Synapsy AI
 
-First, run the development server:
+Unlock AI-powered insights to drive business decisions today. Synapsy AI is an AI-driven SaaS platform designed to transform your data into actionable intelligence, optimize efficiency, automate workflows, and provide predictive insights for informed decision-making.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Features
+
+- **AI-Powered Insights**: Leverage cutting-edge AI to analyze data and uncover actionable intelligence.
+- **Global Trust**: Trusted by companies in 100+ countries worldwide.
+- **Customizable Workflows**: Automate and optimize your business processes with ease.
+- **Predictive Analytics**: Make data-driven decisions with confidence.
+
+## 🖌️ Design
+
+The design of Synapsy AI is inspired by the [Figma Design Template](https://www.figma.com/community/file/1403797660439449698). The UI is clean, modern, and user-friendly, ensuring a seamless experience for users.
+
+## 📂 Project Structure
+
+The project is organized as follows:
+
+```
+src/
+├── app/
+│   ├── globals.css         # Global styles
+│   ├── (landing)/          # Landing page components
+│   │   ├── components/
+│   │   │   ├── Hero/       # Hero section components
+│   │   │   │   ├── Hero.tsx
+│   │   │   │   ├── HeroSocialProof.tsx
+│   │   ├── page.tsx        # Landing page entry point
+├── components/
+│   ├── layout/             # Layout components
+│   │   ├── Header.tsx      # Header component
+│   │   ├── Wrapper.tsx     # Wrapper for layout consistency
+│   ├── ui/                 # UI components (e.g., buttons)
+├── content/
+│   ├── nav.ts              # Navigation items
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Tech Stack
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Framework**: [Next.js](https://nextjs.org/) – React-based framework for building modern web applications.
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework for rapid UI development.
+- **Icons**: [Lucide Icons](https://lucide.dev/) – Beautifully crafted, customizable icons.
+- **TypeScript**: Strictly typed JavaScript for better developer experience.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Installation
 
-## Learn More
+1. Clone the repository:
 
-To learn more about Next.js, take a look at the following resources:
+   ```bash
+   git clone https://github.com/your-username/synapsy-ai.git
+   cd synapsy-ai
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+2. Install dependencies:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+   ```bash
+   npm install
+   ```
 
-## Deploy on Vercel
+3. Run the development server:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+   ```bash
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+4. Open your browser and navigate to `http://localhost:3000`.
+
+## 🖼️ Preview
+
+### Hero Section
+
+The Hero section highlights the platform's value proposition with a bold headline, supporting text, and clear call-to-action buttons.
+
+### Social Proof
+
+Showcase logos of globally recognized companies that trust Synapsy AI.
+
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
+
+---
+
+### 🚧 Work in Progress
+
+This project is currently under active development. Stay tuned for more updates as new features and sections are added. Feedback and contributions are always welcome!
+
+---
+
+### 🤝 Contributing
+
+Contributions are welcome! Feel free to open issues or submit pull requests to improve the project.
+
+---
+
+### 📧 Contact
+
+For inquiries, reach out to me at [devguiga@gmail.com](mailto:devguiga@gmail.com).
