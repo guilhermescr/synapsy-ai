@@ -17,6 +17,8 @@
   --color-nav-inactive: #77819f;
   --color-nav-hover: #4a5bff;
 
+  --color-icon: #7f56d9;
+
   --font-sans: var(--font-raleway), var(--font-inter);
 }
 
@@ -34,6 +36,8 @@
     --color-text: #ffffff;
     --color-text-muted: #7d818d;
     --color-subtitle: #7286ff;
+
+    --color-icon: #7f56d9;
 
     --color-nav-inactive: #8f9bb7;
     --color-nav-hover: #a8b3ff;
@@ -58,11 +62,13 @@
 
   --color-header: var(--color-header);
 
+  --color-icon: var(--color-icon);
+
   --font-sans: var(--font-raleway), var(--font-inter);
 }
 
 body {
-  background: var(--color-bg);
+  background: var(--color-surface);
   color: var(--color-text);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
 }
