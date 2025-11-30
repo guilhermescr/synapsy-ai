@@ -6,7 +6,7 @@ import './features.css';
 export default function Features() {
   return (
     <Wrapper>
-      <section className="min-h-screen flex flex-col gap-5 items-center justify-center text-center px-4">
+      <section className="min-h-screen flex flex-col gap-5 items-center justify-center text-center py-8 px-4">
         <h2 className="text-primary uppercase font-medium tracking-[0.25rem]">
           Features
         </h2>
