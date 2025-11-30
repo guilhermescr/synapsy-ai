@@ -6,7 +6,7 @@ import './features.css';
 export default function Features() {
   return (
     <Wrapper>
-      <section className="min-h-screen flex flex-col gap-5 items-center justify-center text-center">
+      <section className="min-h-screen flex flex-col gap-5 items-center justify-center text-center px-4">
         <h2 className="text-primary uppercase font-medium tracking-[0.25rem]">
           Features
         </h2>
@@ -19,8 +19,8 @@ export default function Features() {
           Unleash innovation and accelerate growth with our dynamic product.
         </p>
 
-        <section className="relative bg-header rounded-2xl flex items-start gap-8 mt-8 p-20 features-cards">
-          <div className="flex flex-col items-center gap-4 px-2">
+        <section className="relative bg-header rounded-2xl flex flex-col lg:flex-row items-start gap-8 mt-8 p-20 features-cards">
+          <div className="flex flex-col items-center gap-4 lg:px-2">
             <Cpu className="text-icon" size={32} />
             <h3 className="font-medium tracking-wide text-lg">
               Cutting-Edge Innovation
@@ -33,9 +33,9 @@ export default function Features() {
             </p>
           </div>
 
-          <div className="bg-gray-100/25 h-50 w-px" />
+          <div className="bg-gray-100/25 h-px w-3/4 lg:h-50 lg:w-px m-auto" />
 
-          <div className="flex flex-col items-center gap-4 px-2">
+          <div className="flex flex-col items-center gap-4 lg:px-2">
             <Network className="text-icon" size={32} />
             <h3 className="font-medium tracking-wide text-lg">
               Seamless Connectivity
@@ -48,9 +48,9 @@ export default function Features() {
             </p>
           </div>
 
-          <div className="bg-gray-100/25 h-50 w-px" />
+          <div className="bg-gray-100/25 h-px w-3/4 lg:h-50 lg:w-px m-auto" />
 
-          <div className="flex flex-col items-center gap-4 px-3">
+          <div className="flex flex-col items-center gap-4 lg:px-3">
             <PanelsTopLeft className="text-icon" size={32} />
             <h3 className="font-medium tracking-wide text-lg">
               Intuitive User Interface
