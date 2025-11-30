@@ -1,4 +1,5 @@
-.features-cards::before {
+/* Improve this later */
+/* .features-cards::before {
   content: '';
   position: absolute;
   background: transparent url('/images/vertical-dots-pattern.png') no-repeat
@@ -24,4 +25,4 @@
   right: -50px;
   transform: translateY(45%);
   z-index: -1;
-}
+} */
