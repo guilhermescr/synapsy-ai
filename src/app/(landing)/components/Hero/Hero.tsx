@@ -6,7 +6,7 @@ import HeroSocialProof from './HeroSocialProof';
 export default function Hero() {
   return (
     <Wrapper>
-      <section className="h-[calc(100vh-5rem)] flex flex-col items-center justify-center pb-10">
+      <section className="min-h-[calc(100vh-5rem)] flex flex-col items-center justify-center pb-10">
         <div className="mt-auto flex flex-col items-center">
           <h2 className="text-foreground text-3xl font-bold">
             Unlock AI-Powered Insights to Drive{' '}
