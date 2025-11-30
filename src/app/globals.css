@@ -67,6 +67,22 @@
   --font-sans: var(--font-raleway), var(--font-inter);
 }
 
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
 body {
   background: var(--color-surface);
   color: var(--color-text);
