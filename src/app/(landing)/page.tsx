@@ -1,6 +1,7 @@
 import Header from '@/src/components/layout/Header';
 import Hero from './components/Hero/Hero';
 import Features from './components/Features/Features';
+import Security from './components/Security/Security';
 
 export default function LandingPage() {
   return (
@@ -10,6 +11,7 @@ export default function LandingPage() {
       <main>
         <Hero />
         <Features />
+        <Security />
       </main>
 
       <footer></footer>
