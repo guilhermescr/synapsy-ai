@@ -28,7 +28,7 @@ export default function Security() {
           </Button>
         </div>
 
-        <div className="relative h-70 w-full md:h-100 md:w-120 mb-20">
+        <div className="relative h-70 w-full md:h-100 md:w-120 md:mb-20">
           <Image
             src={SecurityIllustration}
             alt="Integrations Illustration"
