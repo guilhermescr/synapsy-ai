@@ -15,7 +15,7 @@ export default function Button({
   const buttonClasses = clsx(
     'cursor-pointer flex items-center gap-2 rounded-full text-sm text-center transition',
     {
-      'bg-background text-foreground font-medium border-2 border-primary hover:bg-primary/90':
+      'bg-background text-foreground font-semibold border-2 border-primary hover:bg-primary/90':
         variant === 'primary',
       'bg-transparent text-foreground hover:underline': variant === 'ghost',
     },
