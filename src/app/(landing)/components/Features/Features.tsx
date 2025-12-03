@@ -20,7 +20,7 @@ export default function Features() {
           Unleash innovation and accelerate growth with our dynamic product.
         </p>
 
-        <section className="relative bg-header rounded-2xl flex flex-col lg:flex-row items-start gap-8 mt-8 p-20 features-cards">
+        <section className="relative bg-header rounded-2xl flex flex-col lg:flex-row items-start gap-8 mt-8 py-10 md:p-20 features-cards">
           <div className="flex flex-col items-center gap-4 lg:px-2">
             <Cpu className="text-icon" size={32} />
             <h3 className="font-medium tracking-wide text-lg">
