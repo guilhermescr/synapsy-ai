@@ -1,4 +1,4 @@
-import Wrapper from '@/src/components/layout/Wrapper';
+import Wrapper from '@/src/components/layout/Wrapper/Wrapper';
 import Button from '@/src/components/ui/Button';
 import { ChevronRight, Cpu, Network, PanelsTopLeft } from 'lucide-react';
 import './features.css';
@@ -6,7 +6,7 @@ import Integrations from './Integrations';
 
 export default function Features() {
   return (
-    <Wrapper>
+    <Wrapper className="section-separator">
       <section className="min-h-screen flex flex-col gap-5 items-center justify-center text-center py-8 px-4">
         <h2 className="text-primary text-sm uppercase font-medium tracking-[0.25rem]">
           Features

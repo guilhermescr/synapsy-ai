@@ -1,3 +1,5 @@
+import './wrapper.css';
+
 interface WrapperProps {
   children: React.ReactNode;
   className?: string;
@@ -5,7 +7,7 @@ interface WrapperProps {
 
 export default function Wrapper({ children = '', className }: WrapperProps) {
   return (
-    <div className={`max-w-7xl mx-auto px-6 ${className || ''}`}>
+    <div className={`relative max-w-7xl mx-auto px-6 ${className || ''}`}>
       {children}
     </div>
   );

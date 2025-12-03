@@ -1,4 +1,4 @@
-import Wrapper from '@/src/components/layout/Wrapper';
+import Wrapper from '@/src/components/layout/Wrapper/Wrapper';
 import Button from '@/src/components/ui/Button';
 import { MoveRight } from 'lucide-react';
 import HeroSocialProof from './HeroSocialProof';

@@ -4,7 +4,7 @@ import { NavItem, navItems } from '@/src/content/nav';
 import Button from '../ui/Button';
 import Link from 'next/link';
 import { useState } from 'react';
-import Wrapper from './Wrapper';
+import Wrapper from './Wrapper/Wrapper';
 import { X } from 'lucide-react';
 
 export default function Header() {
