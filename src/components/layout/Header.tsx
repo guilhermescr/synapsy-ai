@@ -6,10 +6,17 @@ import Link from 'next/link';
 import { useState } from 'react';
 import Wrapper from './Wrapper/Wrapper';
 import { Menu, X } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 export default function Header() {
   const [selectedNavItem, setSelectedNavItem] = useState<NavItem>(navItems[0]);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const sidebarVariants = {
+    hidden: { x: '100%', opacity: 0 },
+    visible: { x: 0, opacity: 1 },
+    exit: { x: '100%', opacity: 0 },
+  };
 
   return (
     <header className="bg-header">
@@ -55,7 +62,14 @@ export default function Header() {
       </Wrapper>
 
       {isSidebarOpen && (
-        <div className="fixed inset-0 bg-header z-50">
+        <motion.div
+          className="fixed inset-0 bg-header z-50"
+          initial="hidden"
+          animate="visible"
+          exit="exit"
+          variants={sidebarVariants}
+          transition={{ duration: 0.2, ease: 'easeInOut' }}
+        >
           <div className="flex flex-col items-start p-6">
             <div className="flex items-center justify-between w-full mb-4 pb-4 border-b border-b-surface">
               <h1 className="font-bold text-xl">Synapsy AI</h1>
@@ -95,7 +109,7 @@ export default function Header() {
               </ul>
             </nav>
           </div>
-        </div>
+        </motion.div>
       )}
     </header>
   );
