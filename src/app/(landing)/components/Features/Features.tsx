@@ -2,16 +2,17 @@ import Wrapper from '@/src/components/layout/Wrapper';
 import Button from '@/src/components/ui/Button';
 import { ChevronRight, Cpu, Network, PanelsTopLeft } from 'lucide-react';
 import './features.css';
+import Integrations from './Integrations';
 
 export default function Features() {
   return (
     <Wrapper>
       <section className="min-h-screen flex flex-col gap-5 items-center justify-center text-center py-8 px-4">
-        <h2 className="text-primary uppercase font-medium tracking-[0.25rem]">
+        <h2 className="text-primary text-sm uppercase font-medium tracking-[0.25rem]">
           Features
         </h2>
 
-        <p className="font-semibold text-white text-4xl">
+        <p className="font-semibold text-white text-5xl">
           Discover the Tools that Drive Success
         </p>
 
@@ -72,6 +73,8 @@ export default function Features() {
           </Button>
         </div>
       </section>
+
+      <Integrations />
     </Wrapper>
   );
 }
