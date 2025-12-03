@@ -11,6 +11,7 @@ export default function Button({
   children,
   variant = 'primary',
   size = 'medium',
+  className,
 }: ButtonProps) {
   const buttonClasses = clsx(
     'cursor-pointer flex items-center gap-2 rounded-full text-sm text-center transition',
@@ -23,7 +24,8 @@ export default function Button({
       'px-4 py-1 text-xs': size === 'small',
       'px-6 py-2 text-sm': size === 'medium',
       'px-12 py-3 text-lg': size === 'large',
-    }
+    },
+    className
   );
 
   return <button className={buttonClasses}>{children}</button>;
