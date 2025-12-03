@@ -21,7 +21,9 @@ export default function Integrations() {
           <p>Take advantage of our CSV importer or API</p>
         </div>
 
-        <Button size="large">View all Integrations</Button>
+        <Button size="large" className="mt-6">
+          View all Integrations
+        </Button>
       </div>
 
       <div className="relative h-70 w-full md:h-120 md:w-120">
