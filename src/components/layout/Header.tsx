@@ -5,7 +5,7 @@ import Button from '../ui/Button';
 import Link from 'next/link';
 import { useState } from 'react';
 import Wrapper from './Wrapper/Wrapper';
-import { X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 export default function Header() {
   const [selectedNavItem, setSelectedNavItem] = useState<NavItem>(navItems[0]);
@@ -45,13 +45,11 @@ export default function Header() {
 
           <button
             type="button"
-            className="block md:hidden"
+            className="cursor-pointer block md:hidden"
             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
             aria-label="Toggle Menu"
           >
-            <span className="block w-6 h-0.5 bg-foreground mb-1"></span>
-            <span className="block w-6 h-0.5 bg-foreground mb-1"></span>
-            <span className="block w-6 h-0.5 bg-foreground"></span>
+            <Menu size={24} className="text-foreground" />
           </button>
         </div>
       </Wrapper>
@@ -64,10 +62,11 @@ export default function Header() {
 
               <button
                 type="button"
+                className="cursor-pointer"
                 onClick={() => setIsSidebarOpen(false)}
                 aria-label="Close Menu"
               >
-                <X />
+                <X size={24} className="text-foreground" />
               </button>
             </div>
 
