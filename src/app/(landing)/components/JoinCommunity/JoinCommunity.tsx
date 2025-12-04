@@ -7,7 +7,7 @@ export default function JoinCommunity() {
   return (
     <Wrapper>
       <section className="flex flex-col items-center justify-center text-center my-32">
-        <div className="join-community-card bg-cover! lg:bg-contain! rounded-md flex flex-col gap-5 items-center justify-center py-10 px-4 w-full md:w-4/5">
+        <div className="join-community-card bg-cover! lg:bg-contain! rounded-md flex flex-col gap-5 items-center justify-center py-10 px-4 w-full">
           <DiscordIcon color="text-icon-secondary" className="w-10 md:w-16.5" />
 
           <h2 className="font-bold text-2xl md:text-4xl">Join the community</h2>
