@@ -1,0 +1,4 @@
+.join-community-card {
+  background: var(--color-surface)
+    url('/images/join-community-illustration.png') no-repeat center center;
+}
