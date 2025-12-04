@@ -1,7 +1,8 @@
+import clsx from 'clsx';
+
 interface SocialIconProps {
   color?: string;
-  height?: string | number;
-  width?: string | number;
+  className?: string;
 }
 
 export function TwitterIcon({ color = 'text-primary' }: SocialIconProps) {
@@ -91,14 +92,11 @@ export function InstagramIcon({ color = 'text-primary' }: SocialIconProps) {
 
 export function DiscordIcon({
   color = 'text-primary',
-  width = 66,
-  height = 50,
+  className,
 }: SocialIconProps) {
   return (
     <svg
-      className={color}
-      width={width}
-      height={height}
+      className={clsx(color, className)}
       viewBox="0 0 66 50"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
