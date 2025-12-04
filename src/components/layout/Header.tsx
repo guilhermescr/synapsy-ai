@@ -32,7 +32,7 @@ export default function Header() {
                   className={`${
                     item.label === selectedNavItem.label
                       ? 'text-foreground'
-                      : 'text-nav-inactive'
+                      : 'text-secondary'
                   } hover:text-primary`}
                 >
                   <Link
@@ -92,7 +92,7 @@ export default function Header() {
                     className={`${
                       item.label === selectedNavItem.label
                         ? 'text-foreground'
-                        : 'text-nav-inactive'
+                        : 'text-secondary'
                     } hover:text-primary`}
                   >
                     <Link

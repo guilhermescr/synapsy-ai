@@ -12,12 +12,13 @@
 
   --color-text: #171717;
   --color-text-muted: #7a7d9c;
+  --color-text-secondary: #77819f;
   --color-subtitle: #4a5bff;
 
-  --color-nav-inactive: #77819f;
   --color-nav-hover: #4a5bff;
 
   --color-icon: #7f56d9;
+  --color-icon-secondary: #5865f2;
 
   --font-sans: var(--font-raleway), var(--font-inter);
 }
@@ -35,11 +36,12 @@
 
     --color-text: #ffffff;
     --color-text-muted: #7a7d9c;
+    --color-text-secondary: #8f9bb7;
     --color-subtitle: #7286ff;
 
     --color-icon: #7f56d9;
+    --color-icon-secondary: #5865f2;
 
-    --color-nav-inactive: #8f9bb7;
     --color-nav-hover: #a8b3ff;
   }
 }
@@ -55,14 +57,15 @@
   --color-primary-foreground: var(--color-primary-foreground);
 
   --color-muted: var(--color-text-muted);
+  --color-secondary: var(--color-text-secondary);
   --color-subtitle: var(--color-subtitle);
 
-  --color-nav-inactive: var(--color-nav-inactive);
   --color-nav-hover: var(--color-nav-hover);
 
   --color-header: var(--color-header);
 
   --color-icon: var(--color-icon);
+  --color-icon-secondary: var(--color-icon-secondary);
 
   --font-sans: var(--font-raleway), var(--font-inter);
 }
