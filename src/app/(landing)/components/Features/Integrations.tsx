@@ -4,7 +4,7 @@ import IntegrationsIllustration from '@/public/images/integrations-illustration.
 
 export default function Integrations() {
   return (
-    <section className="min-h-screen flex flex-col-reverse md:flex-row gap-10 items-center justify-center md:justify-between py-8 px-4">
+    <section className="min-h-screen flex flex-col-reverse md:flex-row gap-10 items-center justify-center md:justify-between py-8">
       <div className="flex flex-col items-start gap-4">
         <h2 className="text-primary text-sm uppercase font-medium tracking-[0.25rem]">
           Integrations
@@ -28,10 +28,11 @@ export default function Integrations() {
 
       <div className="relative h-70 w-full md:h-120 md:w-120">
         <Image
+          className="object-contain"
           src={IntegrationsIllustration}
           alt="Integrations Illustration"
-          objectFit="contain"
           fill
+          sizes="(max-width: 768px) 100vw"
         />
       </div>
     </section>

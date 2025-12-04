@@ -30,10 +30,11 @@ export default function Security() {
 
         <div className="relative h-70 w-full md:h-100 md:w-120 md:mb-20">
           <Image
+            className="object-contain"
             src={SecurityIllustration}
             alt="Integrations Illustration"
-            objectFit="contain"
             fill
+            sizes="(max-width: 768px) 100vw"
           />
         </div>
       </section>
