@@ -86,6 +86,14 @@
   border-radius: 4px;
 }
 
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background: var(--color-surface);
   color: var(--color-text);
