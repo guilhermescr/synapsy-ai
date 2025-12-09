@@ -1,0 +1,26 @@
+.slick-track {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.slick-slide {
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .slick-track {
+    gap: 0.625rem;
+  }
+
+  .slick-slide {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .slick-track {
+    gap: 1rem;
+  }
+}
