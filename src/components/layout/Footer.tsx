@@ -35,7 +35,7 @@ export default function Footer() {
         </motion.div>
       </Wrapper>
 
-      <footer className="relative z-10 bg-surface p-20">
+      <footer className="relative z-10 bg-surface py-6 md:p-20">
         <Wrapper className="grid grid-cols-1 md:grid-cols-5 gap-8">
           <div>
             <h2 className="text-2xl font-bold text-foreground">Synapsy AI</h2>
