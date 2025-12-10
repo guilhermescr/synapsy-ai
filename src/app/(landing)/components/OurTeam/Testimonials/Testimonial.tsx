@@ -37,8 +37,8 @@ export default function Testimonial({ testimonial, index }: TestimonialProps) {
   ];
 
   return (
-    <article className="rounded-md h-full max-w-sm relative pb-5">
-      <div className="bg-header border border-icon rounded-md p-6 mx-4">
+    <article className="rounded-md h-full w-full relative pb-5 pointer-events-none select-none">
+      <div className="bg-header border border-icon rounded-md p-6 mx-4 h-full">
         <div className="flex items-center gap-2 mb-5">
           <Image
             className="rounded-md"
