@@ -87,6 +87,7 @@
 }
 
 .no-scrollbar {
+  overflow: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
