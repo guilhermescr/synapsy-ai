@@ -17,7 +17,7 @@ import {
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ChevronLeft, ChevronRight, User2 } from 'lucide-react';
-import CarouselButton from '@/src/components/ui/Carousel/CarouselButton';
+import CarouselButton from '@/src/components/ui/CarouselButton';
 
 function TeamMemberPlaceholder() {
   return (

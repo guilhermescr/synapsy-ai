@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Testimonial from './Testimonial';
-import CarouselButton from '@/src/components/ui/Carousel/CarouselButton';
+import CarouselButton from '@/src/components/ui/CarouselButton';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 export type TestimonialType = {
