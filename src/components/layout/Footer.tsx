@@ -22,7 +22,7 @@ export default function Footer() {
             opacity: [1, 0.7, 1],
           }}
           transition={{
-            duration: 5,
+            duration: 3,
             ease: 'easeInOut',
             repeat: Infinity,
           }}
