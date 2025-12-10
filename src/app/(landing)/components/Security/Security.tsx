@@ -1,12 +1,11 @@
 import Button from '@/src/components/ui/Button';
 import './security.css';
-import Wrapper from '@/src/components/layout/Wrapper/Wrapper';
 import Image from 'next/image';
 import SecurityIllustration from '@/public/images/security-illustration.png';
 
 export default function Security() {
   return (
-    <Wrapper className="section-separator">
+    <>
       <section className="min-h-screen flex flex-col-reverse md:flex-row-reverse gap-10 items-center justify-center md:justify-between py-8 px-4">
         <div className="flex flex-col items-start gap-4">
           <h2 className="text-primary text-sm uppercase font-medium tracking-[0.25rem]">
@@ -38,6 +37,6 @@ export default function Security() {
           />
         </div>
       </section>
-    </Wrapper>
+    </>
   );
 }

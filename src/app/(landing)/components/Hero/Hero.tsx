@@ -1,11 +1,10 @@
-import Wrapper from '@/src/components/layout/Wrapper/Wrapper';
 import Button from '@/src/components/ui/Button';
 import { MoveRight } from 'lucide-react';
 import HeroSocialProof from './HeroSocialProof';
 
 export default function Hero() {
   return (
-    <Wrapper>
+    <>
       <section className="min-h-[calc(100vh-5rem)] flex flex-col items-center justify-center pb-10">
         <div className="mt-auto flex flex-col items-center">
           <h2 className="text-foreground text-3xl font-bold">
@@ -30,6 +29,6 @@ export default function Hero() {
 
         <HeroSocialProof />
       </section>
-    </Wrapper>
+    </>
   );
 }

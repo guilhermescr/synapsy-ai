@@ -1,5 +1,3 @@
-import './wrapper.css';
-
 interface WrapperProps {
   children: React.ReactNode;
   className?: string;
