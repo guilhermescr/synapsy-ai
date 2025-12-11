@@ -13,7 +13,7 @@ export default function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <header className="bg-header/75 sticky top-0 z-10 backdrop-blur-md">
+    <header className="bg-header/75 fixed top-0 z-10 backdrop-blur-md w-full">
       <Wrapper>
         <div className="flex items-center justify-between h-20">
           <h1 className="font-bold text-xl">Synapsy AI</h1>
