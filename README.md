@@ -4,98 +4,123 @@
 
 Unlock AI-powered insights to drive business decisions today. Synapsy AI is an AI-driven SaaS platform designed to transform your data into actionable intelligence, optimize efficiency, automate workflows, and provide predictive insights for informed decision-making.
 
-## 🚀 Features
+---
 
-- **AI-Powered Insights**: Leverage cutting-edge AI to analyze data and uncover actionable intelligence.
-- **Global Trust**: Trusted by companies in 100+ countries worldwide.
-- **Customizable Workflows**: Automate and optimize your business processes with ease.
-- **Predictive Analytics**: Make data-driven decisions with confidence.
+## Features
 
-## 🖌️ Design
+### Hero Section
 
-The design of Synapsy AI is inspired by the [Figma Design Template](https://www.figma.com/community/file/1403797660439449698). The UI is clean, modern, and user-friendly, ensuring a seamless experience for users.
+- **AI-Powered Insights**: Unlock insights to drive business decisions.
+- **Call-to-Actions**: Book a demo or take a product tour.
 
-## 📂 Project Structure
+![Hero Section](public/images/readme/hero-section.png)
 
-The project is organized as follows:
+---
 
-```
-src/
-├── app/
-│   ├── globals.css         # Global styles
-│   ├── (landing)/          # Landing page components
-│   │   ├── components/
-│   │   │   ├── Hero/       # Hero section components
-│   │   │   │   ├── Hero.tsx
-│   │   │   │   ├── HeroSocialProof.tsx
-│   │   ├── page.tsx        # Landing page entry point
-├── components/
-│   ├── layout/             # Layout components
-│   │   ├── Header.tsx      # Header component
-│   │   ├── Wrapper.tsx     # Wrapper for layout consistency
-│   ├── ui/                 # UI components (e.g., buttons)
-├── content/
-│   ├── nav.ts              # Navigation items
-```
+### Features Section
 
-## 🛠️ Tech Stack
+- **Cutting-Edge Innovation**: Experience groundbreaking technological advancements.
+- **Unified View of Customers**: Integrate feedback channels seamlessly.
 
-- **Framework**: [Next.js](https://nextjs.org/) – React-based framework for building modern web applications.
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/) – Utility-first CSS framework for rapid UI development.
-- **Icons**: [Lucide Icons](https://lucide.dev/) – Beautifully crafted, customizable icons.
-- **TypeScript**: Strictly typed JavaScript for better developer experience.
+![Features Section](public/images/readme/features-section.png)
 
-## 📦 Installation
+---
+
+### Security Section
+
+- **Enhanced Security**: Protect your data with advanced security measures.
+- **Trust and Reliability**: Built with a focus on privacy and compliance.
+
+![Security Section](public/images/readme/security-section.png)
+
+---
+
+### Our Team
+
+- **Meet the Team**: Learn about the passionate individuals behind Synapsy AI.
+- **Testimonials**: Hear from clients about their success stories.
+
+![Meet the Team Section](public/images/readme/our-team-section.png)
+![Testimonials Section](public/images/readme/testimonials-section.png)
+
+---
+
+## Technology
+
+Synapsy AI is built with modern technologies to ensure a seamless and efficient experience.
+
+**Stack:** React, Next.js, TypeScript, Tailwind CSS, Jest, ESLint, Framer Motion.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js
+- npm or yarn
+
+### Installation
 
 1. Clone the repository:
-
    ```bash
    git clone https://github.com/guilhermescr/synapsy-ai.git
+   ```
+2. Navigate to the project directory:
+   ```bash
    cd synapsy-ai
    ```
-
-2. Install dependencies:
-
+3. Install dependencies:
    ```bash
    npm install
    ```
-
-3. Run the development server:
-
+4. Start the development server:
    ```bash
    npm run dev
    ```
 
-4. Open your browser and navigate to `http://localhost:3000`.
+---
 
-## 🖼️ Preview
+## Screenshots
 
 ### Hero Section
 
-The Hero section highlights the platform's value proposition with a bold headline, supporting text, and clear call-to-action buttons.
+![Hero Section](public/images/readme/hero-section.png)
 
-### Social Proof
+### Features Section
 
-Showcase logos of globally recognized companies that trust Synapsy AI.
+![Features Section](public/images/readme/features-section.png)
 
-## 📄 License
+### Security Section
 
-This project is licensed under the [MIT License](LICENSE).
+![Security Section](public/images/readme/security-section.png)
 
----
+### Our Team Section
 
-### 🚧 Work in Progress
+![Our Team Section](public/images/readme/our-team-section.png)
 
-This project is currently under active development. Stay tuned for more updates as new features and sections are added. Feedback and contributions are always welcome!
+## Mobile View
 
----
-
-### 🤝 Contributing
-
-Contributions are welcome! Feel free to open issues or submit pull requests to improve the project.
+![Hero](public/images/readme/mobile-view-hero.png)
+![Sidebar](public/images/readme/mobile-view-sidebar.png)
 
 ---
 
-### 📧 Contact
+## Links
 
-For inquiries, reach out to me at [devguiga@gmail.com](mailto:devguiga@gmail.com).
+- **Live Demo**: [https://synapsy-ai.vercel.app](https://synapsy-ai.vercel.app)
+- **Repository**: [https://github.com/guilhermescr/synapsy-ai](https://github.com/guilhermescr/synapsy-ai)
+
+---
+
+## Reporting Issues
+
+If you encounter any critical bugs or security vulnerabilities, please contact me directly at **devguiga@gmail.com**. Your feedback is highly appreciated and helps improve the platform!
+
+---
+
+## Authors
+
+- **Guilherme Rocha**  
+  Follow me on [GitHub](https://github.com/guilhermescr) and join the community!  
+  Thank you for visiting, and happy AI-powered decision-making!
