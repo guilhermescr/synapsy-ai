@@ -13,10 +13,10 @@ export default function LandingPage() {
     <>
       <Header />
 
-      <Wrapper>
-        <main>
-          <Hero />
+      <main>
+        <Hero />
 
+        <Wrapper>
           <Features />
           <SectionSeparator />
 
@@ -25,8 +25,8 @@ export default function LandingPage() {
 
           <OurTeam />
           <JoinCommunity />
-        </main>
-      </Wrapper>
+        </Wrapper>
+      </main>
 
       <Footer />
     </>
