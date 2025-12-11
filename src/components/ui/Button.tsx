@@ -14,7 +14,7 @@ export default function Button({
   className,
 }: ButtonProps) {
   const buttonClasses = clsx(
-    'cursor-pointer flex items-center gap-2 rounded-full text-sm text-center transition',
+    'cursor-pointer flex items-center justify-center gap-2 rounded-full text-sm text-center transition',
     {
       'bg-background text-foreground font-semibold border-2 border-primary hover:bg-primary/90':
         variant === 'primary',
