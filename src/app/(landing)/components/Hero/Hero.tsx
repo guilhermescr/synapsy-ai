@@ -8,7 +8,7 @@ export default function Hero() {
   return (
     <>
       <section
-        className="min-h-[calc(100vh+5rem)] flex flex-col items-center justify-center pb-10 relative"
+        className="min-h-[calc(100vh+5rem)] flex flex-col items-center justify-center relative"
         style={{
           background: `var(--color-surface) url(${HeroBackground.src}) no-repeat center center / cover`,
         }}
