@@ -63,7 +63,7 @@ export default function Features() {
           </div>
         </section>
 
-        <div className="flex gap-4 items-center">
+        <div className="flex flex-col md:flex-row gap-4 items-center">
           <Button size="large">Contact Us</Button>
 
           <Button variant="ghost">

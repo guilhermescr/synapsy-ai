@@ -31,10 +31,10 @@ export default function Hero() {
               decision-making.
             </p>
 
-            <div className="flex items-center justify-between gap-6 w-max">
-              <Button>Book a Demo</Button>
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6 w-max">
+              <Button className="w-full md:w-auto">Book a Demo</Button>
 
-              <Button>
+              <Button className="w-full md:w-auto">
                 Take Product Tour <MoveRight size={16} />
               </Button>
             </div>
