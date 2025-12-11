@@ -8,6 +8,7 @@ import AppleLogo from '@/public/images/logos/social-proof/apple-logo.png';
 import SamsungLogo from '@/public/images/logos/social-proof/samsung-logo.png';
 import NikeLogo from '@/public/images/logos/social-proof/nike-logo.png';
 import LGLogo from '@/public/images/logos/social-proof/lg-logo.webp';
+import './hero-social-proof.css';
 
 export default function HeroSocialProof() {
   const logos = [
@@ -28,8 +29,8 @@ export default function HeroSocialProof() {
       </p>
 
       <div className="bg-background overflow-hidden mb-6">
-        <Wrapper className="relative w-full py-4">
-          <div className="flex justify-between gap-10 animate-scroll">
+        <Wrapper className="relative w-full">
+          <div className="flex justify-between gap-10 animate-scroll py-4">
             {[...logos, ...logos].map((logo, index) => (
               <Image
                 key={`${logo.src}-${index}`}
