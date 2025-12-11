@@ -13,7 +13,7 @@ export default function Hero() {
           background: `var(--color-surface) url(${HeroBackground.src}) no-repeat center center / cover`,
         }}
       >
-        <div className="absolute left-1/2 top-[10%] -translate-x-1/2 h-[calc(100vh-14rem)] w-3/4 bg-[#04041a45] blur-3xl rounded-full" />
+        <div className="absolute left-1/2 top-[10%] -translate-x-1/2 h-[calc(100vh-14rem)] max-w-7xl w-[90%] bg-[#04041a65] blur-3xl rounded-full" />
 
         <div className="mt-auto w-full md:py-40">
           <Wrapper className="flex flex-col items-center">
