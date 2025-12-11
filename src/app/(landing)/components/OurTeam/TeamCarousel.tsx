@@ -19,6 +19,13 @@ import Link from 'next/link';
 import { ChevronLeft, ChevronRight, User2 } from 'lucide-react';
 import CarouselButton from '@/src/components/ui/CarouselButton';
 
+type TeamMember = {
+  image: StaticImageData | null;
+  name: string;
+  role: string;
+  testimonial: string;
+};
+
 function TeamMemberPlaceholder() {
   return (
     <div className="rounded-full h-40 w-40 bg-header border border-icon flex items-center justify-center">
@@ -27,18 +34,16 @@ function TeamMemberPlaceholder() {
   );
 }
 
-function TeamMemberCard({ name, role }: { name: string; role: string }) {
+interface TeamMemberCardProps {
+  member: TeamMember;
+}
+
+function TeamMemberCard({ member }: TeamMemberCardProps) {
+  const { name, role, testimonial } = member;
+
   return (
     <section className="bg-header rounded-2xl flex flex-col items-center justify-center py-8 px-5 md:px-24 relative max-w-4xl w-full">
-      <p className="max-w-[690px] mb-8 tracking-wide">
-        During a train ride, a moment of inspiration struck Vasily. He wished
-        for a convenient study tool on his phone to help him prepare for the
-        LSAT. However, such an app didn't exist at the time. Determined to
-        overcome this hurdle, Vasily took matters into his own hands and
-        developed one of the earliest and most comprehensive LSAT apps on the
-        market. The app quickly gained popularity, becoming the #1 paid LSAT app
-        for over a year.
-      </p>
+      <p className="max-w-[690px] mb-8 tracking-wide">{testimonial}</p>
 
       <h3 className="text-primary font-semibold">{name}</h3>
       <p className="mt-1 mb-2 text-muted">{role}</p>
@@ -60,12 +65,6 @@ function TeamMemberCard({ name, role }: { name: string; role: string }) {
     </section>
   );
 }
-
-type TeamMember = {
-  image: StaticImageData | null;
-  name: string;
-  role: string;
-};
 
 export default function TeamCarousel() {
   const [team, setTeam] = useState<TeamMember[]>([]);
@@ -102,13 +101,55 @@ export default function TeamCarousel() {
   useEffect(() => {
     const fetchTeamData = async () => {
       const teamData: TeamMember[] = [
-        { image: TeamPerson1, name: 'John Wick', role: 'CEO FutureSphere' },
-        { image: TeamPerson2, name: 'Jane Doe', role: 'CTO FutureSphere' },
-        { image: TeamPerson3, name: 'Alice Smith', role: 'CFO FutureSphere' },
-        { image: TeamPerson4, name: 'Bob Johnson', role: 'COO FutureSphere' },
-        { image: TeamPerson5, name: 'Charlie Brown', role: 'CMO FutureSphere' },
-        { image: TeamPerson6, name: 'Diana Prince', role: 'Lead Designer' },
-        { image: TeamPerson7, name: 'Bruce Wayne', role: 'Head of Security' },
+        {
+          image: TeamPerson1,
+          name: 'John Wick',
+          role: 'CEO FutureSphere',
+          testimonial:
+            'Managing my team became effortless with the tools provided by Synapsy AI.',
+        },
+        {
+          image: TeamPerson2,
+          name: 'Jane Doe',
+          role: 'CTO FutureSphere',
+          testimonial:
+            'We automated repetitive tasks and saved countless hours every week.',
+        },
+        {
+          image: TeamPerson3,
+          name: 'Alice Smith',
+          role: 'CFO FutureSphere',
+          testimonial:
+            'The insights we gained helped us cut costs and boost revenue significantly.',
+        },
+        {
+          image: TeamPerson4,
+          name: 'Bob Johnson',
+          role: 'COO FutureSphere',
+          testimonial:
+            "During a train ride, a moment of inspiration struck Vasily. He wished for a convenient study tool on his phone to help him prepare for the LSAT. However, such an app didn't exist at the time. Determined to overcome this hurdle, Vasily took matters into his own hands and developed one of the earliest and most comprehensive LSAT apps on the market. The app quickly gained popularity, becoming the #1 paid LSAT app for over a year.",
+        },
+        {
+          image: TeamPerson5,
+          name: 'Charlie Brown',
+          role: 'CMO FutureSphere',
+          testimonial:
+            'Our marketing campaigns are now more targeted and effective than ever.',
+        },
+        {
+          image: TeamPerson6,
+          name: 'Diana Prince',
+          role: 'Lead Designer',
+          testimonial:
+            'The design process is now streamlined, allowing me to focus on creativity.',
+        },
+        {
+          image: TeamPerson7,
+          name: 'Bruce Wayne',
+          role: 'Head of Security',
+          testimonial:
+            'Enhanced security protocols have ensured the safety of our data and systems.',
+        },
       ];
 
       if (teamData.length && teamData.length % 2 === 0) {
@@ -116,6 +157,7 @@ export default function TeamCarousel() {
           image: null,
           name: '',
           role: '',
+          testimonial: '',
         });
       }
       setTeam(teamData);
@@ -130,10 +172,7 @@ export default function TeamCarousel() {
     <section className="flex flex-col items-center gap-10 w-full">
       {selectedIndex !== null && (
         <div>
-          <TeamMemberCard
-            name={team[selectedIndex].name}
-            role={team[selectedIndex].role}
-          />
+          <TeamMemberCard member={team[selectedIndex]} />
         </div>
       )}
 
