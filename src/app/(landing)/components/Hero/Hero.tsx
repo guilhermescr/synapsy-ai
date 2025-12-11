@@ -3,6 +3,7 @@ import Button from '@/src/components/ui/Button';
 import { MoveRight } from 'lucide-react';
 import HeroSocialProof from './HeroSocialProof';
 import HeroBackground from '@/public/images/layout/hero/hero-background.png';
+import './hero.css';
 
 export default function Hero() {
   return (
@@ -13,7 +14,7 @@ export default function Hero() {
           background: `var(--color-surface) url(${HeroBackground.src}) no-repeat center center / cover`,
         }}
       >
-        <div className="absolute left-1/2 top-[10%] -translate-x-1/2 h-[calc(100vh-14rem)] max-w-7xl w-[90%] bg-[#04041a65] blur-3xl rounded-full" />
+        <div className="absolute left-1/2 top-[10%] -translate-x-1/2 h-[calc(100vh-14rem)] max-w-7xl w-[90%] bg-[#04041a65] hero-blur rounded-full" />
 
         <div className="mt-auto w-full md:py-40">
           <Wrapper className="flex flex-col items-center">
