@@ -5,7 +5,7 @@ export default function OurTeam() {
   return (
     <>
       <section className="min-h-screen flex flex-col gap-5 items-center justify-center text-center py-8">
-        <p className="font-semibold text-white text-5xl">Meet our team</p>
+        <h2 className="font-semibold text-white text-5xl">Meet our team</h2>
 
         <p className="max-w-3xl">
           Meet our passionate and talented team, committed to delivering
