@@ -13,7 +13,7 @@ export default function LandingPage() {
     <>
       <Header />
 
-      <main>
+      <main id="home">
         <Hero />
 
         <Wrapper>
