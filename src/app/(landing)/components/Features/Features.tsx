@@ -1,6 +1,5 @@
 import Button from '@/src/components/ui/Button';
 import { ChevronRight, Cpu, Network, PanelsTopLeft } from 'lucide-react';
-import './features.css';
 import Integrations from './Integrations';
 
 export default function Features() {
