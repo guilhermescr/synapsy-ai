@@ -14,7 +14,7 @@ export default function HeroSocialProof() {
 
   return (
     <section className="mt-auto text-center">
-      <p className="uppercase tracking-widest font-inter mb-6">
+      <p className="uppercase tracking-widest font-inter mb-6 pb-6">
         Trusted by companies in 100+ countries around the globe.
       </p>
 

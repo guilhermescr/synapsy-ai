@@ -1,30 +1,44 @@
+import Wrapper from '@/src/components/layout/Wrapper/Wrapper';
 import Button from '@/src/components/ui/Button';
 import { MoveRight } from 'lucide-react';
 import HeroSocialProof from './HeroSocialProof';
+import HeroBackground from '@/public/images/layout/hero/hero-background.png';
 
 export default function Hero() {
   return (
     <>
-      <section className="min-h-[calc(100vh-5rem)] flex flex-col items-center justify-center pb-10">
-        <div className="mt-auto flex flex-col items-center">
-          <h2 className="text-foreground text-3xl font-bold">
-            Unlock AI-Powered Insights to Drive{' '}
-            <span>Business Decisions Today</span>
-          </h2>
+      <section
+        className="min-h-[calc(100vh+5rem)] flex flex-col items-center justify-center pb-10 relative"
+        style={{
+          background: `var(--color-surface) url(${HeroBackground.src}) no-repeat center center / cover`,
+        }}
+      >
+        <div className="absolute left-1/2 top-[10%] -translate-x-1/2 h-[calc(100vh-14rem)] w-3/4 bg-[#04041a45] blur-3xl rounded-full" />
 
-          <p className="text-center max-w-3xl my-6">
-            Transform your data into actionable intelligence with our AI-driven
-            SaaS, designed to optimize efficiency, automate workflows, and
-            provide predictive insights for informed decision-making.
-          </p>
+        <div className="mt-auto w-full md:py-40">
+          <Wrapper className="flex flex-col items-center">
+            <h2 className="text-foreground text-4xl md:text-5xl text-center font-bold">
+              Unlock AI-Powered Insights to Drive{' '}
+              <span className="block py-2 bg-linear-to-r from-primary from-11% to-[#FE7587] bg-clip-text text-transparent">
+                Business Decisions Today
+              </span>
+            </h2>
 
-          <div className="flex items-center justify-between gap-6 w-max">
-            <Button>Book a Demo</Button>
+            <p className="text-center text-lg max-w-4xl my-6">
+              Transform your data into actionable intelligence with our
+              AI-driven SaaS, designed to optimize efficiency, automate
+              workflows, and provide predictive insights for informed
+              decision-making.
+            </p>
 
-            <Button>
-              Take Product Tour <MoveRight size={16} />
-            </Button>
-          </div>
+            <div className="flex items-center justify-between gap-6 w-max">
+              <Button>Book a Demo</Button>
+
+              <Button>
+                Take Product Tour <MoveRight size={16} />
+              </Button>
+            </div>
+          </Wrapper>
         </div>
 
         <HeroSocialProof />
